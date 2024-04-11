@@ -1,0 +1,250 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefae0; /* cornsilk for the body background */
+    color: #333;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #9ba88d; /* A darker shade for header for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-logo-container {
+    flex: 1; /* Allows the logo container to grow */
+}
+
+.dashboard-logo {
+    height: 40px; /* Smaller logo */
+    margin-right: auto; /* Ensures logo stays on the left */
+}
+
+.dashboard-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end; /* Aligns nav items to the right */
+    flex: 2; /* Allows the nav container to grow and push items to the right */
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff; /* Light color for contrast */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #faedcd; /* A light, contrasting color for hover state */
+}
+
+
+.dashboard-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e9edc9; /* Beige */
+}
+
+.dashboard-footer {
+    background-color: #ccd5ae; /* Tea-green */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+.widget {
+    background-color: #fefae0; /* Cornsilk */
+    border: 1px solid #ccd5ae; /* Tea-green */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.widget h2 {
+    color: #d4a373; /* Buff */
+    margin-bottom: 15px;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+.widget-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d4a373; /* Buff */
+    text-decoration: none;
+}
+
+.widget-link:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #d4a373; /* Buff */
+    color: #fefae0; /* Cornsilk */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b39265; /* Darker shade of Buff */
+}
+
+.welcome-message {
+    text-align: center;
+    background-color: #e9edc9; /* Soft background for emphasis */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+}
+
+.welcome-message h1 {
+    color: #333;
+    font-size: 2.5rem; /* Larger size for importance */
+    margin-bottom: 15px;
+}
+
+.welcome-message p {
+    color: #555;
+    font-size: 1.2rem; /* Readable text size */
+}
+.widget.job-alerts {
+    background-color: #fefae0; /* A light background for the widget */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.widget.job-alerts h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.widget.job-alerts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget.job-alerts li {
+    margin-bottom: 15px;
+}
+
+.widget.job-alerts li a {
+    color: #d4a373; /* Use the theme's accent color for job titles */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.widget.job-alerts li p {
+    color: #555;
+    font-size: 0.9rem; /* Smaller text for the job description */
+    margin-top: 5px;
+}
+
+.widget.job-alerts .widget-link {
+    display: inline-block;
+    background-color: #d4a373;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.widget.job-alerts .widget-link:hover {
+    background-color: #b39265; /* A darker shade for hover effect */
+}
+.widget.upcoming-events {
+    background-color: #e9edc9; /* Light background to keep it airy and clean */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Spacing between widgets */
+}
+
+.widget.upcoming-events h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.widget.upcoming-events ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget.upcoming-events li {
+    margin-bottom: 15px;
+    padding-left: 16px;
+    text-align: left; /* Ensure text alignment is consistent */
+}
+
+.widget.upcoming-events li a {
+    color: #d4a373; /* Highlight event titles with the accent color */
+    font-weight: bold;
+    text-decoration: none;
+    display: block; /* Make the entire area clickable */
+}
+
+.widget.upcoming-events li p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.widget.upcoming-events .widget-link {
+    display: block; /* Ensure it spans the full width for easier clickability */
+    background-color: #d4a373;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center; /* Center the text for better aesthetics */
+    margin-top: 20px;
+}
+
+.widget.upcoming-events .widget-link:hover {
+    background-color: #b39265; /* A darker shade for the hover effect */
+    align-items: center;
+}
+.dashboard-main {
+    padding: 20px;
+    background-color: #fefae0; /* Example background color, adjust according to your design */
+}
+
+.dashboard-widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the space between widgets */
+    justify-content: space-around; /* This will evenly space out the widgets */
+}
+
+.widget {
+    flex: 1;
+    min-width: 300px; /* Minimum width of each widget to ensure readability */
+    background-color: #e9edc9; /* Widget background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+

@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+    .dashboard-nav {
+        justify-content: center;
+    }
+
+    .dashboard-content {
+        padding: 40px;
+    }
+    .dashboard-header {
+        padding: 15px 10%;
+    }
+
+    .dashboard-nav {
+        gap: 30px;
+    }
+    .welcome-message {
+        max-width: 60%; /* Narrower on larger screens for better reading */
+        padding: 40px;
+    }
+    
+    .welcome-message h1 {
+        font-size: 3rem; /* Even larger on big screens */
+    }
+
+    .welcome-message p {
+        font-size: 1.4rem; /* Slightly larger for readability */
+    }
+}

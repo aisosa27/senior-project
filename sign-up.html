@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Career Development Hub</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/cdhlogo.jpg" alt="Career Development Hub Logo" style="height: 50px;">
+            <div>
+                <a href="index.html">Home</a>
+                
+                <a href="how-it-works.html">How It Works</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="quote-of-the-day">
+            <p id="dailyQuote"></p>
+        </div>
+       
+        
+    </header>
+
+    <section id="signup">
+        <h1>Sign Up</h1>
+        <p>Create your account to join our community and start your journey.</p>
+        <form action="scripts/signup.php" method="POST">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit" class="cta-button">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Career Development Hub</p>
+    </footer>
+<script src="scripts/index.js"></script>
+</body>
+</html>
