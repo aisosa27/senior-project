@@ -1,0 +1,340 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: #faedcd; /* Cornsilk */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.site-header, .site-footer {
+    background-color: #e9edc9; /* Light beige */
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.navbar img.logo {
+    height: 60px;
+}
+
+.navbar .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #d4a373; /* Buff */
+}
+
+.hero {
+    background-size: cover;
+    color: black;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure it takes full height of the hero section */
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: #e9edc9;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    color: #e9edc9;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.cta-button, .quiz-button {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #d4a373;
+    border: 2px solid white;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FEFAE0;
+    color: #d4a373;
+    border-color: #d4a373;
+}
+
+.quote-of-the-day p {
+    font-style: italic;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #e9edc9; /* Light beige */
+    color: black;
+    padding: 40px 20px; /* Adjust padding for spacing */
+    font-size: 0.9rem;
+    text-align: center; /* Center footer content */
+}
+
+.bottom-cta {
+    text-align: center; /* Center the CTA content */
+    margin-bottom: 20px; /* Add some space below the CTA before the copyright text */
+}
+
+.bottom-cta h2 {
+    margin: 0 0 20px 0; /* Add some space below the heading */
+    color: bl; /* Darker text color for better readability */
+}
+
+.features-section {
+    background-color: #fefae0; /* Light background for contrast */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features-section h2 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.feature-item {
+    background-color: #e9edc9; /* Light beige */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item img {
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.intrigue-section, .features-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-section .features-grid .feature-item h3, 
+.features-section .features-grid .feature-item p {
+    text-align: center; /* Ensures text within each feature is centered */
+}
+
+.intrigue-section {
+    background-color: #e9edc9; /* Clean white background */
+    padding: 60px 0; /* Ample padding for spacing */
+    text-align: center; /* Centers the text */
+}
+
+.intrigue-section .container {
+    max-width: 800px; /* Restricts content width for readability */
+    margin: 0 auto; /* Centers the container */
+}
+
+.intrigue-section h2 {
+    font-size: 2.5rem; /* Large, eye-catching heading */
+    color: black; /* Deep blue for contrast */
+    margin-bottom: 30px; /* Separates heading from text */
+}
+
+.intrigue-section .content p {
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    color: black; /* Soft grey for easy reading */
+    line-height: 1.8; /* Increased line height for better readability */
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+
+
+#how-it-works {
+    background-color: #FEFAE0;
+    padding: 40px 20px;
+    color: black;
+}
+
+#how-it-works h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.step {
+    background-color: #E9EDC9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.step h3 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.step p {
+    line-height: 1.6;
+}
+
+#hiw {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 800px; /* Adjust based on your design needs */
+}
+
+#hiw h2 {
+    margin-bottom: 15px;
+    font-size: 2rem; /* Adjust font size as needed */
+}
+
+#hiw p {
+    font-size: 1rem; /* Adjust font size as needed */
+    line-height: 1.5;
+}
+
+#faq-content {
+    margin: 20px auto;
+    max-width: 800px; /* Adjust based on your layout */
+}
+
+.faq-item {
+    background: #CCD5AE;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background: #E9EDC9; /* Adjust the color to fit your theme */
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 20px;
+    color: black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.contact-section, .additional-contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-intro, .form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.contact-info-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-info-list li {
+    margin-bottom: 10px;
+}
+
+.contact-email {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
